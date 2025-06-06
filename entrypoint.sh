@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Xvfb $DISPLAY -ac -listen tcp -screen 0 1920x1080x16 &
+Xvfb $DISPLAY -ac -listen tcp -screen 0 ${RESOLUTION}x16 &
 while ! pgrep "Xvfb" > /dev/null; do
     sleep .1
 done

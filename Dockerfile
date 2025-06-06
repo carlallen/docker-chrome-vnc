@@ -7,6 +7,7 @@ ENV DEBUG_PORT 9222
 ENV VNC_PORT 5900
 ENV VNC_PASSWORD hyperaccs
 ENV DISPLAY :99
+ENV RESOLUTION 1920x1080
 
 RUN apt-get update
 RUN apt-get install -y \
