@@ -1,6 +1,6 @@
 # Credits: https://leimao.github.io/blog/Docker-Container-GUI-Display/
 
-FROM ubuntu:20.04
+FROM ubuntu:24.04
 
 ENV DEBIAN_FRONTEND noninteravtive
 ENV DEBUG_PORT 9222
@@ -28,4 +28,3 @@ RUN chmod +x entrypoint.sh
 
 ENTRYPOINT ["/bin/bash", "-c", "./entrypoint.sh"]
 EXPOSE $DEBUG_PORT $VNC_PORT
-
